@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* -- navbar-- */
+
+/* 1. logo */
+
+.container-fluid a img {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .container-fluid a img {
+    width: 70px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .container-fluid a img {
+    width: 70px;
+  }
+}
+
+/* 2. color nav  */
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+/* 3.fixed top */
+
+/* 4.border-bottom */
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Make navbar responsive for smaller and medium devices */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .navbar-nav {
+    justify-content: center;
+  }
+}
+
+/* li hover */
+
+.navbar-nav li {
+  transition: all 0.5s ease-in-out;
+  padding-right: 15px;
+}
+
+.navbar-nav li:hover {
+  background-color: blue;
+  padding: 5px;
+}
+
+/* --hero --- */
+
+.hero {
+  background: url(Assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 300px;
+  }
+}
+
+/*  hero content */
+
+.herocontent {
+  color: #fff;
+  position: relative;
+  top: 250px;
+  text-transform: uppercase;
+  left: 80px;
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .herocontent {
+    top: 100px;
+    left: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .herocontent {
+    top: 65px;
+    left: 20px;
+    font-size: 17px;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* DT  */
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- view more tag ---- */
+
+.DT-box {
+  height: 650px;
+  background-color: rgb(241, 241, 241);
+}
+
+.DT-content a {
+  color: rgb(31, 212, 214);
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.4s;
+  font-size: larger;
+}
+
+.DT-content a::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: currentColor;
+  transition: width 0.4s;
+}
+
+.DT-content a:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.DT-content a:hover::before {
+  width: 100%;
+}
+
+/* ---------------------------------------- */
+
+/* dt box -gap */
+
+@media only screen and (min-width: 1024px) {
+  .Digital-box {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+/* ------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  .Digital-box {
+    margin: 0 34px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;
+  }
+}
+
+/* ------------------------------------------------success ------------------------------------------------------------------------------ */
+
+.success-con {
+  height: 643px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+.slide-box1 {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(8, 8, 155);
+  position: relative;
+}
+
+.slide-box1 h5 {
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+  top: 150px;
+  padding: 0 10px;
+}
+
+.slide-box1 .slide-content {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  bottom: 88px;
+  background: linear-gradient(to bottom, #2a9fd6, #19aee4);
+  color: #fff;
+  padding: 0 10px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide-box1 .slide-content p {
+  position: relative;
+  top: 80px;
+  font-size: 17px;
+}
+
+.slide-box1 .slide-content a {
+  border: 1px solid white;
+  padding: 3px;
+  position: relative;
+  color: #fff;
+  top: 90px;
+}
+
+.slide-box1:hover .slide-content {
+  opacity: 1;
+}
+
+/* ------------ for a hover  ------------------ */
+
+/* -------------------------------------------------- */
+
+.sl-box {
+  background-color: rgb(8, 8, 155);
+  width: 300px;
+  height: 450px;
+  border-right: 1px solid grey;
+}
+
+.sl-main {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  color: #fff;
+}
+
+.sl-main h5 {
+  padding-top: 39px;
+}
+
+.sl-main img {
+  width: 70px;
+  height: auto;
+}
+
+.sl-main .sl-box-content {
+  width: 250px;
+  height: 500px;
+  opacity: 0;
+}
+
+.sl-main .sl-box-content p {
+  padding-top: 16px;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.sl-main .sl-box-content a {
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.sl-box:hover {
+  background: linear-gradient(to bottom, #0d79c1, #00abdc, #14bee3);
+  height: 500px;
+}
+
+.sl-box:hover .sl-main .sl-box-content {
+  opacity: 1;
+}
+
+/* -------------------------- product ------------------ */
+
+.product-con {
+  height: 600px;
+  margin-top: 60px;
+}
+
+.pl-box {
+  background-color: rgb(255, 254, 254);
+  width: 300px;
+  height: 300px;
+}
+
+.pl-box:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.pl-main h6 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.pl-main {
+  position: relative;
+  top: 60px;
+  left: 35px;
+}
+
+.pl-main p {
+  padding-right: 36px;
+  margin-right: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+
+.*/
+
+.join-con {
+  height: 850px;
+  color: #fff;
+}
+
+.joinusimg img {
+  width: 100%;
+}
+
+.js-content1 {
+  width: 100%;
+  height: 413px;
+
+  background-color: #010836;
+}
+.js-content2 {
+  width: 100%;
+  height: 413px;
+
+  background-color: #17b1cf;
+}
+.js-content3 {
+  width: 100%;
+  height: 413px;
+
+  background-color: #1271bb;
+}
+
+.join-r {
+  display: flex;
+}
+
+.join-col {
+  padding: 0;
+}
+
+/* ----- content---------- */
+
+.js-content1 {
+  padding: 140px 60px;
+}
+
+.js-content1 p {
+  padding-top: 10px;
+}
+
+.js-content1 a {
+  position: relative;
+  top: 10px;
+  color: #01b4cd;
+}
+.js-content2 {
+  padding: 140px 60px;
+}
+
+.js-content2 p {
+  padding-top: 10px;
+}
+
+.js-content3 {
+  padding: 140px 60px;
+}
+
+.js-content3 p {
+  padding-top: 10px;
+}
+
+/* --- content 2  */
+
+/* Media queries for medium devices */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+.client-con {
+  height: 250px;
+}
+
+.cl-main img {
+  width: 100px;
+}
+
+@media (max-width: 991px) {
+  /* Disable for medium devices and below */
+  .client-con {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Disable for smaller devices and below */
+  .client-con {
+    display: none;
+  }
+}
+
+/* =----------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Styles for smaller screens */
+  .form-con {
+    position: relative;
+    top: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for medium screens */
+  .form-con {
+    position: relative;
+    top: 600px;
+  }
+}
+
+.form-con {
+  height: 400px;
+  background: url("Assets/form-bg.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* .footer-con {
+  height: 600px;
+  width: 100vw;
+  background-color: #09225a;
+}
+
+@media (max-width: 1024px) {
+  .footer-con {
+    position: relative;
+    top: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-con {
+    position: relative;
+    top: 600px;
+  }
+} */
+
+.footer-con {
+  height: 400px;
+
+  background-color: #09225a;
+}
+
+@media (max-width: 1024px) {
+  .footer-con {
+    position: relative;
+    top: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-con {
+    position: relative;
+    top: 600px;
+  }
+}
