@@ -420,12 +420,50 @@ a {
 
 /* --- content 2  */
 
+.joinrimg img {
+  position: relative;
+  bottom: 100px;
+  left: 400px;
+  width: 80px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .joinrimg img {
+    display: none;
+  }
+}
+
+/* Disable img tag for medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .joinrimg img {
+    display: none;
+  }
+}
+
+.js-content2 h2 {
+  position: relative;
+  bottom: 100px;
+}
+.js-content2 p {
+  position: relative;
+  bottom: 100px;
+}
+.js-content3 h2 {
+  position: relative;
+  bottom: 100px;
+}
+.js-content3 p {
+  position: relative;
+  bottom: 100px;
+}
+
 /* Media queries for medium devices */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .client-con {
-  height: 250px;
+  height: 340px;
 }
 
 .cl-main img {
@@ -447,6 +485,12 @@ a {
 }
 
 /* =----------------------------------------------- */
+
+.form-con {
+  height: 400px;
+  background: url("Assets/form-bg.jpeg") center center no-repeat;
+  background-size: cover;
+}
 @media (max-width: 1024px) {
   /* Styles for smaller screens */
   .form-con {
@@ -463,33 +507,7 @@ a {
   }
 }
 
-.form-con {
-  height: 400px;
-  background: url("Assets/form-bg.jpeg") center center no-repeat;
-  background-size: cover;
-}
-
 /* ----------------------------------------------------------------- */
-
-/* .footer-con {
-  height: 600px;
-  width: 100vw;
-  background-color: #09225a;
-}
-
-@media (max-width: 1024px) {
-  .footer-con {
-    position: relative;
-    top: 600px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-con {
-    position: relative;
-    top: 600px;
-  }
-} */
 
 .footer-con {
   height: 400px;
