@@ -14,35 +14,35 @@
 <body>
     <div class="hero">
         <div class="container">
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="Assets/Logo.png" alt=""></a>
+                    <a class="navbar-brand px-5" href="#"><img src="Assets/Logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse ms-auto" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse ms-auto px-5" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown link
+                                <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Your Next
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#DT">Digital Transformation</a></li>
+                                    <li><a class="dropdown-item" href="#success">Platforms</a></li>
+                                    <li><a class="dropdown-item" href="#">Experience</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active px-3" aria-current="page" href="#industries">Industries</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link px-3" href="#">Capabilities</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link px-3" href="#success">Success Stories</a>
                             </li>
                         </ul>
                     </div>
@@ -529,7 +529,11 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
+    <!-- ------forms-------------------------- -->
+
 
     <section>
         <div class=" form-con ">
@@ -537,6 +541,9 @@
                 <div class="row pt-3 pb-3">
 
                     <h6 class="display-5 text-center text-white pt-5 pb-3">Transform Your business today</h6>
+
+
+                    <!-- --- for Desktop --- -->
 
                     <form action="/" class="mt-5  fordesktop">
                         <div class="row">
@@ -573,23 +580,27 @@
                     </form>
 
 
+                    <!-- ---for Small ------ -->
 
                     <div class="col-lg-3 forsmall">
 
                         <form action="/" id="form" class="border-custom p-4">
                             <div class="input-control mb-3">
+                                <label for="email" class="text-white pb-2">Name</label>
                                 <input type="text"
                                     class="form-control border-custom bg-transparent text-white shadow-none" id="name"
                                     name="name" placeholder="name" required>
                                 <div class="error"></div>
                             </div>
                             <div class="input-control mb-3">
+                                <label for="email" class="text-white pb-2">Email</label>
                                 <input type="email"
                                     class="form-control border-custom bg-transparent text-white shadow-none" id="email"
                                     name="email" required>
                                 <div class="error"></div>
                             </div>
                             <div class="input-control mb-3">
+                                <label for="email" class="text-white pb-2">Phone Number</label>
                                 <input type="number"
                                     class="form-control border-custom bg-transparent text-white shadow-none" id="number"
                                     name="number" required>
@@ -597,6 +608,7 @@
                             </div>
 
                             <div class="input-control mb-3">
+                                <label for="email" class="text-white pb-2">Message</label>
                                 <textarea name="message" id="message" rows="4"
                                     class="form-control border-custom bg-transparent text-white shadow-none"></textarea>
                                 <div class="error"></div>
@@ -679,23 +691,80 @@
         </div>
     </section>
 
+    <!-- ------ footer-------- -->
 
-    <section class="footer-con">
-        <div class="row ">
-            <div class="col-md-12">
-                <div></div>
+    <footer>
+        <div class="footer-con">
+            <div class="row g-0 text-white ">
+                <div class="col-md-3 p-4 border-custom mt-4 mb-5">
+
+                    <h5>ADDRESS</h5>
+                    <h5>INDIA</h5>
+                    <ul>
+                        <P>Office No 6, Silver Fern,
+                            Karve Road,Pune 411038,
+                            Maharashtra, India.</P>
+                        <P>Call us +91 73500 13701</P>
+                        <P>Email us at: sales@tekdi.net</P>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 p-4 border-custom mt-4 mb-5">
+
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-md-3 p-4 border-custom mt-4 mb-5">
+
+                    <h5>YOUR NEXT</h5>
+                    <ul>
+                        <li><a href="#">Digital Transformation</a></li>
+                        <li><a href="#">Platforms</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="col-md-3 p-4 border-custom mt-4 mb-5">
+
+                    <h5>SERVICES</h5>
+                    <ul>
+                        <li><a href="#">Product Engineering</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                        <li><a href="#">Conversational AI</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Quality Assurance AI</a></li>
+                    </ul>
+
+
+                </div>
+
+
+                <div class="col-12 p-4 border-footer text-center designer">
+                    <p class="mb-0">@Designed By <a href="#">Praveen Kumar Rao</a> </p>
+                </div>
             </div>
         </div>
-    </section>
+    </footer>
 
 
-    <!-- ------ form-------- -->
+
 
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scroll.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

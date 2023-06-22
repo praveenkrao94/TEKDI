@@ -12,6 +12,11 @@ body {
 a {
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
+
 /* -- navbar-- */
 
 /* 1. logo */
@@ -39,7 +44,7 @@ a {
   color: white !important;
 }
 
-/* 3.fixed top */
+/
 
 /* 4.border-bottom */
 
@@ -47,7 +52,6 @@ a {
   border-bottom: 1px solid #ccc;
 }
 
-/* Make navbar responsive for smaller and medium devices */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     flex-basis: 100%;
@@ -63,12 +67,10 @@ a {
 
 .navbar-nav li {
   transition: all 0.5s ease-in-out;
-  padding-right: 15px;
 }
 
 .navbar-nav li:hover {
-  background-color: blue;
-  padding: 5px;
+  background-color: #09225a;
 }
 
 /* --hero --- */
@@ -122,9 +124,9 @@ a {
 
 @media (max-width: 480px) {
   .herocontent {
-    top: 65px;
+    top: 135px;
     left: 20px;
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
@@ -434,7 +436,6 @@ a {
   }
 }
 
-/* Disable img tag for medium devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .joinrimg img {
     display: none;
@@ -457,8 +458,6 @@ a {
   position: relative;
   bottom: 100px;
 }
-
-/* Media queries for medium devices */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -495,14 +494,12 @@ a {
 /* ----------------------------------------------- */
 
 @media (max-width: 991px) {
-  /* Disable for medium devices and below */
   .client-con {
     display: none;
   }
 }
 
 @media (max-width: 767px) {
-  /* Disable for smaller devices and below */
   .client-con {
     display: none;
   }
@@ -516,16 +513,16 @@ a {
   background-size: cover;
 }
 @media (max-width: 1024px) {
-  /* Styles for smaller screens */
   .form-con {
+    height: 670px;
     position: relative;
     top: 600px;
   }
 }
 
 @media (max-width: 768px) {
-  /* Styles for medium screens */
   .form-con {
+    height: 670px;
     position: relative;
     top: 600px;
   }
@@ -582,13 +579,16 @@ input {
 /* ----------------------------------------------------------------- */
 
 .footer-con {
-  height: 400px;
+  height: 420px;
 
   background-color: #09225a;
 }
 
 @media (max-width: 1024px) {
   .footer-con {
+    height: 1240px;
+
+    background-color: #09225a;
     position: relative;
     top: 600px;
   }
@@ -596,7 +596,14 @@ input {
 
 @media (max-width: 768px) {
   .footer-con {
+    height: 1250px;
+
+    background-color: #09225a;
     position: relative;
     top: 600px;
   }
+}
+
+.border-footer {
+  border: 1px solid white;
 }
