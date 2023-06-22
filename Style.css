@@ -463,12 +463,36 @@ a {
 /* -------------------------------------------------------------------------------------------------------------------------------------- */
 
 .client-con {
-  height: 340px;
+  height: 250px;
 }
 
-.cl-main img {
+.sl-main img {
   width: 100px;
 }
+
+.cl-box {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 150px;
+  border-right: 1px solid grey;
+}
+
+.images {
+  display: inline-block;
+  position: relative;
+}
+
+.images img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.images:hover img {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+/* ----------------------------------------------- */
 
 @media (max-width: 991px) {
   /* Disable for medium devices and below */
@@ -487,7 +511,7 @@ a {
 /* =----------------------------------------------- */
 
 .form-con {
-  height: 400px;
+  height: 550px;
   background: url("Assets/form-bg.jpeg") center center no-repeat;
   background-size: cover;
 }
@@ -504,6 +528,54 @@ a {
   .form-con {
     position: relative;
     top: 600px;
+  }
+}
+
+input {
+  width: 80%;
+
+  border: 1px solid #ccc;
+}
+
+.col-md-10 {
+  position: relative;
+  left: 70px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-control {
+  flex: 1;
+}
+
+/* --------------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+  .forsmall {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .forsmall {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 991px) {
+  .fordesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fordesktop {
+    display: block;
   }
 }
 
